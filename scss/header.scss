@@ -1,0 +1,150 @@
+/*Обнуление*/
+@import 'colors';
+
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   max-height: 100dvh;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+/*input::-ms-clear {
+   display: none;
+}*/
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+/*--------------------*/
+.page_wrapper {
+   min-height: 100%;
+   max-height: 100dvh;
+   display: flex;
+   flex-direction: column;
+}
+
+body {
+
+   font-family: "Poppins", sans-serif;
+}
+
+main {
+   flex: 1 1 auto;
+}
+
+.container {
+   padding: 0px 20px 0px 5vw;
+}
+
+header {
+   padding: 10px 20px 10px 5vw;
+   background-color: $blue;
+}
+
+
+.logo img {
+   height: 4vw !important;
+}
+
+@media screen and (max-width: 1400px) {
+   .logo img {
+      height: 4vw !important;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .logo img {
+      height: 6vw !important;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+   .logo img {
+      height: 9vw !important;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .logo img {
+      height: 12vw !important;
+   }
+}
+
+@media screen and (max-width: 300px) {}

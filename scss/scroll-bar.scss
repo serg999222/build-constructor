@@ -1,0 +1,39 @@
+/* Стилізація для десктопних браузерів на базі WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+   width: 0;
+   /* Ширина скроллбару */
+   height: 0;
+   /* Висота скроллбару для горизонтального скролу */
+}
+
+::-webkit-scrollbar-thumb {
+   background: transparent;
+   /* Прозорий скроллбар */
+   border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: transparent;
+   /* Прозорий скроллбар при наведенні */
+}
+
+::-webkit-scrollbar-track {
+   background: transparent;
+   /* Прозорий фон треку */
+}
+
+/* Стилізація для десктопних браузерів Firefox */
+* {
+   scrollbar-width: none;
+   /* Вимикає скроллбар */
+   scrollbar-color: transparent transparent;
+   /* Прозорий скроллбар */
+}
+
+/* Стилізація для Internet Explorer і Edge (старі версії) */
+body {
+   -ms-overflow-style: none;
+   /* Вимикає скроллбар */
+}
+
+/* Для нових версій Edge, які на основі Chromium, підходить стилізація для WebKit */
